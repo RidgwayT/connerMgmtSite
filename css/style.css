@@ -14,16 +14,8 @@ body {
     font-family: 'Mukta', sans-serif; 
     background: #222;
     font-weight: 400;
-}
-
-.content {
-    height: 200vh;
-    background-image: url(/images/signclose.jpg); 
-    background-color: #333;
-    background-blend-mode: multiply;
-    background-size: contain;
-    display: grid;
-    place-items: center;
+    min-width: 400px;
+    flex-shrink: 0;
 }
 
 header {
@@ -122,122 +114,139 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 800px) {
-    .nav-button-label {
-        display: none;
-        }
+.description {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: bolder;
+    line-height: 1.2;
+}
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+.content {
+    height: auto;
+    background-image: url(/images/signclose.jpg); 
+    background-color: rgb(75, 73, 73);
+    background-blend-mode: multiply;
+    background-size: cover;    
+    padding-top: 53px;
+    color: black;      
+    line-height: 1.4;
+    display: block;    
+}
 
-        }
 
-    .logo {
-        grid-column: 2 / span 1;
+
+img {
+    height:auto;
+    width: 100%;
+    display: flex;
+    max-width: 900px;
+}
+
+.tray {
+    background-color:rgb(206, 212, 195);
+    width: 90%;
+    max-width: 850px;
+    display: flex;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    font-size: .7em;
+    padding: 5px;
+    background: var(--background);
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
     }
 
-    nav {
-        all: unset;
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        }
-
-    nav a {
-        opacity: 1;
-        position: relative;
-        }
-
-    nav a::before {
-        content: '';
-        display: block;
-        height: 5px;
-        background: black;
-        position: absolute;  
-        top: -.75em;    
-        left: 0;
-        right: 0;  
-        transform: scale(0, 1);
-        transition: transform ease-in-out 250ms;
-        }
-
-    nav a:hover::before {
-        transform: scale(1,1);
-        }
-
-
- 
-
-    nav ul {
-        display: flex;
-        justify-content: flex-end;        
-        }
-
-    nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
-        }
-
-    .content {
-        height: 100vh;
-        background-image: url(/images/signclose.jpg); 
-        background-color: #333;
-        background-size: cover;
-        color: aliceblue;
-        }
-
-    .sidenav {
-        height: 100%;
-        width: 175px;
-        position: fixed;
-        z-index: 1;
-        top: 53px;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        border-right: 1px grey solid;
-        }
-  
-    .sidenav a {
-        color: white;
-        padding: 16px;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        }
-  
-    .sidenav a:hover {
-        background-color: #ddd;
-        color: black;
-        font-size: 1.1em;
-        }
-
-    .quicklinks {
-        justify-content: center;
-        display: flex;
-        text-decoration: underline;       
-        font-size: 1.4em;
+    h2 {
+        font-size: 36px;
+        margin: 0px;
     }
 
-    .quicklinks img {
-        margin-left: 5px;
-        margin-top:
-    }
 
-    
+/*--------------MEDIA CHANGE--------------------------------*/
+/*----------------------------------------------------------*/
 
-    
-  
-  
+    @media screen and (min-width: 800px) {
+        .nav-button-label {
+            display: none;
+            }
 
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
 
+            }
 
+        .logo {
+            grid-column: 2 / span 1;
+        }
 
-   
-}    
+        nav {
+            all: unset;
+            grid-column: 3 / 4;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            }
 
+        nav a {
+            opacity: 1;
+            position: relative;
+            }
 
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background: black;
+            position: absolute;  
+            bottom: -.75em;    
+            left: 0;
+            right: 0;  
+            transform: scale(0, 1);
+            transition: transform ease-in-out 250ms;
+            }
 
+        nav a:hover::before {
+            transform: scale(1,1);
+            }
 
+        nav ul {
+            display: flex;
+            justify-content: flex-end;        
+            }
+
+        nav li {
+            margin-left: 3em;
+            margin-bottom: 0;
+            }
+
+        .content {
+            height: 100vh;
+            background-image: url(/images/signclose.jpg); 
+            background-color: #333;
+            background-size: cover;
+            color: black;
+            display: block;;
+            }   
+
+        .img {
+            display: flex;
+            justify-content: center;
+        }
+
+            
+        footer {
+            font-size: .7em;
+            padding: 5px;
+            background: var(--background);
+            justify-content: center;
+            display: flex;
+            }
+            
+}   
