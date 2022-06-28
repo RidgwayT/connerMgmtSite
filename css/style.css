@@ -24,11 +24,13 @@ header {
     position: fixed;
     width: 100%;
     z-index: 999;
+    justify-content: center;
+    
 }
 
-.logo {
-    margin: 0;
-
+header img {
+       max-width: 30%;
+       margin: 2px auto;
 }
 
 .nav-button {
@@ -127,7 +129,7 @@ nav a:hover {
     background-image: url(/images/signclose.jpg); 
     background-color: rgb(75, 73, 73);
     background-blend-mode: multiply;
-    background-size: cover;    
+    background-size: cover;   
     padding-top: 53px;
     color: black;      
     line-height: 1.4;
@@ -179,11 +181,11 @@ footer {
         header {
             display: grid;
             grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-
             }
 
-        .logo {
-            grid-column: 2 / span 1;
+        header img {
+            margin: 2px 10px;
+            max-width:fit-content;
         }
 
         nav {
