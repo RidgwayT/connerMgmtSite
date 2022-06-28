@@ -25,12 +25,15 @@ header {
     width: 100%;
     z-index: 999;
     justify-content: center;
+    min-height: 53px;
     
 }
 
 header img {
        max-width: 30%;
        margin: 2px auto;
+       min-height: 53px;
+       min-width: 221px;
 }
 
 .nav-button {
@@ -101,6 +104,7 @@ nav a {
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
+    font-weight: 700;
 }
 
 nav a:hover {
@@ -126,7 +130,7 @@ nav a:hover {
 
 .content {
     height: auto;
-    background-image: url(/images/signclose.jpg); 
+    background-image: url(signclose.jpg); 
     background-color: rgb(75, 73, 73);
     background-blend-mode: multiply;
     background-size: cover;   
@@ -186,6 +190,8 @@ footer {
         header img {
             margin: 2px 10px;
             max-width:fit-content;
+            min-height:53px;
+            min-width: 221px;
         }
 
         nav {
@@ -230,7 +236,7 @@ footer {
 
         .content {
             height: 100vh;
-            background-image: url(/images/signclose.jpg); 
+            background-image: url(signclose.jpg); 
             background-color: #333;
             background-size: cover;
             color: black;
