@@ -1,3 +1,4 @@
+<?php include '../php/sentMail.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,26 +38,58 @@
         </label>
     </header>
 
+    
+
     <div class="content">
         <div class="container">  
-            <form id="contact" action="" method="post">
-              <h3>Quick Contact</h3>
-              <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <form id="contact" action="../php/sentMail.php" method="post">
+              <h3>Rental Application</h3>
+              <h4>Fill in all information possible</h4>
          
               <fieldset>
-                <input placeholder="Your name" name="name" type="text" tabindex="1" autofocus>
+                <input placeholder="Your Name" name="name" type="text" tabindex="1" autofocus>
+              </fieldset>              
+              <fieldset>
+                <input placeholder="Your Phone Number" name="tel" type="tel" tabindex="2" >
               </fieldset>
               <fieldset>
-                <input placeholder="Your Email Address" name="email" type="email" tabindex="2">
+                <input placeholder="Current Address" type="text" name="curradd" tabindex="3">
               </fieldset>
               <fieldset>
-                <input placeholder="Your Phone Number" name="tel" type="tel" tabindex="3" >
+                <input placeholder="Who are you currently renting from?" type="text" name="currpm" tabindex="4">
               </fieldset>
               <fieldset>
-                <input placeholder="Type your subject line" type="text" name="subject" tabindex="4">
+                <input placeholder="Phone Number of Your Current Property Manager" name="pmtel" type="tel" tabindex="5" >
               </fieldset>
               <fieldset>
-                <textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
+                <input placeholder="How Long at Your Current Address?" type="text" name="hlcurr" tabindex="6">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Name of Everyone to Live With You" type="text" name="nameall" tabindex="7">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Any Pets? If so please describe..." type="text" name="pets" tabindex="8">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Have you ever been evicted? If so, please state why..." type="text" name="evict" tabindex="9">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Current Occupation | How Long with Employer" type="text" name="occu" tabindex="10">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Spouse Current Occupation | How Long with Employer" type="text" name="spoccu" tabindex="11">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Other Source of Income" type="text" name="othinc" tabindex="12">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Personal Reference - Name" type="text" name="perref" tabindex="13">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Personal Reference - Phone Number" name="reftel" type="tel" tabindex="14" >
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" name="email" type="email" tabindex="15">
               </fieldset>
               <div>
                  <p class="success"> <?php echo $success;  ?></p>
@@ -66,10 +99,9 @@
                 <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
               </fieldset>
             </form>
-            
-             
-          </div>
-    </div>
+        </div>
+      </div>
+      <footer class="footer">c 2022 Conner Mgmt</footer>
 
     
 </body>
