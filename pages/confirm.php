@@ -28,7 +28,7 @@
                 <li><a href="/pages/about.html">About</a></li>
                 <li><a href="/pages/apply.html">Apply</a></li>
                 <li><a href="/pages/quicklinks.html">Quick Links</a></li> 
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/pages/contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <label for="nav-button" class="nav-button-label">
@@ -36,26 +36,15 @@
         </label>
     </header>
 
-    <div class="content">        
-            <div class="mapframebig">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.083580319159!2d-94.71468555297852!3d37.4129810105059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x374b6c86a8cdbd!2sConner%20Rental%20Management!5e0!3m2!1sen!2sus!4v1656702389302!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+    <div class="content">    
+        <div class="conbox">            
+            <div class="description">
+                 Application submitted successfully. Please allow 24-48 hours for processing.
+                <img src="../images/goose.jpg">
             </div>
-            <div class="mapframesmall">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12980439.538057407!2d-111.58058750000002!3d37.4122311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c7c3d45a4a799f%3A0x374b6c86a8cdbd!2sConner%20Rental%20Management!5e0!3m2!1sen!2sus!4v1656705691043!5m2!1sen!2sus" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> 
-            <div class="tray">
-                <ul>
-                    <li>ConnerMgmt</li>
-                    <li>Hours</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    
-                </ul>
-            </div>
+        </div>  
+         
     </div>
-    <footer class="footer">c 2022 Conner Mgmt</footer>     
-    
+    <footer class="footer">c 2022 Conner Mgmt</footer>
 </body>
 </html>

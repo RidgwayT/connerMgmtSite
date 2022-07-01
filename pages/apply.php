@@ -1,4 +1,4 @@
-<?php include '../php/sentMail.php';?>
+<?php include 'appMailer.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,11 +38,9 @@
         </label>
     </header>
 
-    
-
     <div class="content">
-        <div class="container">  
-            <form id="contact" action="../php/sentMail.php" method="post">
+        <div class="container">
+            <form id="contact" action="appMailer.php" method="post">
               <h3>Rental Application</h3>
               <h4>Fill in all information possible</h4>
          
@@ -53,7 +51,7 @@
                 <input placeholder="Your Phone Number" name="phone" type="tel" tabindex="2" >
               </fieldset>
               <fieldset>
-                <input placeholder="Your Email Address" name="email" type="email" tabindex="3">
+                <input placeholder="Your Email Address (check for confirmation after submitting)" name="email" type="email" tabindex="3">
               </fieldset>
               <fieldset>
                 <input placeholder="Number of Bedrooms | Bathrooms Needed" type="text" name="rooms" tabindex="4">
@@ -92,17 +90,13 @@
                 <input placeholder="Other Source of Income" type="text" name="othinc" tabindex="15">
               </fieldset>
               <fieldset>
-                <input placeholder="Personal Reference - Name" type="text" name="othinc" tabindex="16">
+                <input placeholder="Personal Reference - Name" type="text" name="perref" tabindex="16">
               </fieldset>              
               <fieldset>
                 <input placeholder="Personal Reference - Phone Number" name="refphone" type="tel" tabindex="17">
               </fieldset>
-              <div>
-                 <p class="success"> <?php echo $success;  ?></p>
-                 <p class="failed"> <?php echo $failed;  ?></p>
-              </div>
-              <fieldset>
-                <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+              <fieldset>                
+                <button type="submit" name="submit" id="contact-submit" tabindex="18" data-submit="...Sending">Submit Now</button>
               </fieldset>
             </form>
         </div>
