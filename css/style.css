@@ -125,7 +125,8 @@ nav a:hover {
     margin-bottom: 0;
     font-weight: bolder;
     line-height: 1.2;
-    max-width: 880px;    
+    max-width: 880px;   
+    padding: 10px; 
 }
 
 .content {
@@ -141,11 +142,11 @@ nav a:hover {
 
 .conbox {
     background-color:rgb(206, 212, 195);
-    max-width: 90%;
+    max-width: 600px;
     display: flex;
     margin: 5px auto;
     border-radius: 10px;
-    padding: auto;
+    padding: 10px;
     justify-content: center;
 }
 
@@ -154,7 +155,7 @@ img {
     width: 100%;
     display: flex;
     max-width: 900px;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 
 .tray {
@@ -163,36 +164,44 @@ img {
     display: flex;
     margin: 5px auto;
     border-radius: 10px;
+    border-style: ridge; 
     padding: 10px;
     justify-content: center;
     }
 
-.tray ul {
-    list-style: none;
-
+ul {
+    list-style-type: none;
 }
 
-
-.mapframebig {
-    display: none;
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
 
-.mapframesmall {
-    display: flex;
-    justify-content: center;
-    height: 70vh;
-    align-items: center;
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .maptray {
     background-color:rgb(206, 212, 195);
     max-width: 400px;
     display: flex;
-    margin: 5px auto;
+    margin: 50px auto 0px auto;
     border-radius: 10px;
+    border-style: ridge;
     padding: 10px;
     justify-content: center;
+    
+}
 
+.space {
+    min-height: 10vh;
 }
 
 footer {
@@ -343,7 +352,7 @@ fieldset {
 
         body {
             margin: 0;
-        }    
+            }    
 
         header {
             display: grid;
@@ -355,7 +364,7 @@ fieldset {
             max-width:fit-content;
             min-height:53px;
             min-width: 221px;
-        }
+            }
 
         nav {
             all: unset;
@@ -407,23 +416,13 @@ fieldset {
         .img {
             display: flex;
             justify-content: center;
-        }
+            }   
 
-        .tray {
+        .tray ul {
             max-width: 685px;
-        }
-
-        .mapframesmall {
-            display: none;
-        }
-
-        .mapframebig {
-            display: flex;
-            justify-content: center;
-            margin: 2px auto;
-        }
-
-            
+           
+            }
+    
         footer {
             font-size: .7em;
             padding: 5px;
