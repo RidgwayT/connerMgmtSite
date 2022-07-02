@@ -42,7 +42,7 @@
         <div class="container">
             <form id="contact" action="appMailer.php" method="post">
               <h3>Rental Application</h3>
-              <h4>Fill in all information possible</h4>
+              <h4>Fill in all information possible. Please allow 24-48hrs for processing then call our office to check back.</h4>
          
               <fieldset>
                 <input placeholder="Your Name" name="name" type="text" tabindex="1" autofocus>

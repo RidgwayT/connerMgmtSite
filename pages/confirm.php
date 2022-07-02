@@ -39,7 +39,7 @@
     <div class="content">    
         <div class="conbox">            
             <div class="description">
-                 Application submitted successfully. Please allow 24-48 hours for processing.
+                 Application submitted successfully. Please allow 24-48 hours for processing then call our office at 620 231 7040. Thank you.
                 <img src="../images/goose.jpg">
             </div>
         </div>  
