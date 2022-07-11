@@ -1,0 +1,95 @@
+<?php include 'appMailer.php' ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KZRBB5K');</script>
+  <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conner Rental Mgmt.</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="script.js"></script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZRBB5K"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <img src="/images/logo.jpg" alt="conner management logo">
+        <input type="checkbox" id="nav-button" class="nav-button">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="#">Apply</a></li>
+                <li><a href="/pages/usefullinks.html">Useful Links</a></li> 
+                <li><a href="/pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="nav-button" class="nav-button-label">
+            <span></span>
+        </label>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <form id="contact" action="appMailer.php" method="post">
+              <h1>Rental Application</h1>
+              <h2>Fill in all information possible. Please allow 24-48hrs for processing then call our office to check back.</h2>
+                <input placeholder="Your Name" id="name" name="name" type="text" autofocus>
+                <label for="name">Name</label>
+                <input placeholder="Your Phone Number" id="phone" name="phone" type="tel">
+                <label for="phone">Phone</label>
+                <input placeholder="Your Email Address (check for confirmation after submitting)" name="email" id="email" type="email">
+                <label for="email" form="contact">Email Address</label>
+                <input placeholder="Number of Bedrooms | Bathrooms Needed" type="text" name="rooms" id="rooms">
+                <label for="rooms" form="contact">Number of Bedrooms & Bathrooms Needed</label>
+                <input placeholder="Price Range" type="text" name="prange" id="prange">
+                <label for="prange" form="contact">Price Range</label>
+                <input placeholder="Current Address" type="text" name="curradd" id="curradd">
+                <label for="curradd" form="contact">Current Address</label>
+                <input placeholder="Who are you currently renting from?" type="text" name="currpm" id="currpm">
+                <label for="currpm" form="contact">Current Property Manager</label>
+                <input placeholder="Phone Number of Your Current Property Manager" name="pmphone" id="pmphone" type="tel">
+                <label for="pmphone" form="contact">Current Property Manager Phone Number</label>
+                <input placeholder="How Long at Your Current Address?" type="text" name="hlcurr" id="hlcurr">
+                <label for="hlcurr" form="contact">How Long at Your Current Address?</label>
+                <input placeholder="Name of Everyone to Live With You" type="text" name="nameall" id="nameall">
+                <label for="nameall" form="contact">Name of Everyone to Live With You</label>
+                <input placeholder="Any Pets? If so please describe..." type="text" name="pets" id="pets">
+                <label for="pets" form="contact">List Any Pets</label>
+                <input placeholder="Have you ever been evicted? If so, please state why..." type="text" name="evict" id="evict">
+                <label for="evict" form="contact">Have You Ever Been Evicted? If so, why?</label>
+                <input placeholder="Current Occupation | How Long with Employer" type="text" name="occu" id="occu">
+                <label for="occu" form="contact">Current Occupation? How Long With Employer?</label>
+                <input placeholder="Spouse Current Occupation | How Long with Employer" type="text" name="spoccu" id="spoccu">
+                <label for="spoccu" form="contact">Spouse Occupation? How Long With Employer</label>
+                <input placeholder="Other Source of Income" type="text" name="othinc" id="othinc">
+                <label for="othinc" form="contact">Other Income?</label>
+                <input placeholder="Personal Reference - Name" type="text" name="perref" id="perref">
+                <label for="perref" form="contact">Personal Reference: Name</label>
+                <input placeholder="Personal Reference - Phone Number" name="refphone" id="refphone" type="tel">
+                <label for="refphone" form="contact">Personal Reference: Phone Number</label>
+                <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+              </form>
+        </div>
+      </div>
+      <footer class="footer">c 2022 Conner Mgmt</footer>
+
+    
+</body>
+</html>
