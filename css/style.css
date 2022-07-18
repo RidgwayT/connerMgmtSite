@@ -15,7 +15,6 @@ body {
     background: #222;
     font-weight: 400;
     min-width: 300px;
-    flex-shrink: 0;
 }
 
 header {
@@ -25,8 +24,7 @@ header {
     width: 100%;
     z-index: 999;
     justify-content: center;
-    min-height: 53px;
-    
+    min-height: 53px;    
 }
 
 header img {
@@ -170,19 +168,24 @@ nav a:hover {
     text-decoration: none;   
 }
 
-
-
 img {
     height:auto;
-    width: 100%;
+    width: 80%;
     display: flex;
     max-width: 900px;
     border-radius: 20px;
 }
 
+.img {
+    display: flex;
+    justify-content: center;
+    }
+
 .tray {
     background-color:rgb(206, 212, 195);
+    width: 90%;
     max-width: 880px;
+
     display: flex;
     margin: 5px auto;
     border-radius: 10px;
@@ -311,19 +314,6 @@ h2 {
 :-ms-input-placeholder {
  color:#888;
 }
- 
-.success{
-    color: green;
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-}
-.failed{
-    color: red;
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-}
 
 
 /*--------------MEDIA CHANGE--------------------------------*/
@@ -397,10 +387,7 @@ h2 {
             color: black;
             }   
 
-        .img {
-            display: flex;
-            justify-content: center;
-            }   
+     
 
         .tray ul {
             max-width: 685px;
